@@ -1,0 +1,138 @@
+<!--doctype html-->
+<html>
+	<head>
+		<title>
+			Sketch
+		</title>
+
+		<style type="text/css">
+			*
+			{
+				margin:0px;
+			}
+			html{
+				background-image:url(../images/background.jpg);
+				background-repeat:no-repeat;
+	 			background-attachment:fixed;
+				height:100%;
+				width:100%;
+			}
+			li {
+				float:left;
+				padding:30px;
+				color:#0D0D63;
+				list-style:none;
+				font-size:15px;
+				font-family:helvetica;
+				transition:all 0.5s;
+			}
+			li:hover{
+				transform:scale(1.5,1.5);
+				color:maroon;
+			}
+			h1{
+				color:maroon;
+				clear:both;
+				margin-bottom:4px;
+				font-family:helvetica;
+			}
+			h4{
+			 color:maroon;
+			 font-size:20px;
+			 font-family:helvetica;
+			 margin-left:50px;"
+			}
+			h5{
+				color:maroon;
+				font-size:10px;
+				font-family:helvetica;
+				margin: 40px 400px 100px;
+			}
+			a {
+				text-decoration:none;
+				color:black;
+			}
+			nav {
+				background:brown fixed;
+				height:80px;
+				width:100%;
+			}
+		</style>
+
+	</head>
+
+		<body>
+
+			<div style="margin:0px auto; background:#FADFDF; height:950px; width:1000px;">
+
+				<header style="background-color:#FADFDF">
+					<h2 style="color:maroon; margin-left:275px;"> Sketch And Painting </h2>
+					<div style="background-image:url(../images/logo.jpg); height:100px; width:100px;margin:20px 40px 8px 40px;">
+					</div>
+
+					<div style="clear:both"></div>
+
+				<nav style="background-color:#f5cece; width:1000px;height:65px; margin-top:10px">
+
+					<ul>
+						<li> <a href="../home.html">Home</a></li>
+						<li> <a href="history.html">History</a></li>
+						<li> <a href="types.html">Types</a></li>
+						<li> <a href="sketch.html">Sketch</a></li>
+						<li> <a href="painting.html">Painting</a></li>
+						<li> <a href="contact us.html"> Contact Us</a></li>
+					</ul>
+
+				</nav>
+
+				</header>
+
+				<div>
+					<img src="../images/image0.jpg" name="slide" width="1000px" height="500px">
+					<script type="text/javascript">
+					var image1= new Image();
+					var image2 = new Image();
+					image1.src= "../images/image1.jpg";
+					image2.src= "../images/image2.jpg";
+					var step = 1;
+					function slider()
+					{
+						document.images.slide.src = "../images/image" + step + ".jpg";
+						if (step <11)
+						{
+							step++;
+						}
+						else
+						{
+							step= 1;
+						}
+						setTimeout("slider()", 3000);
+					}
+					slider();
+					</script>
+
+
+				</div>
+
+				<div style="background-color:#FADFDF; height:200px; width:1000px;">
+				<h1> Article of Painting </h1>
+				<P>
+					The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek and European Christian traditions.
+				</p>
+				</div>
+
+				<footer style="background-color:#fadfdf; height:200px; width:1000px;">
+					<h3 style="color:maroon; font-size:50px; font-family:helvetica; margin-left:250px;">Get In Touch</h3>
+					<h4> Have queries, need suggestion or just </h4>
+					<h4>want to say hello.</h4>
+					<h4>Please drop us comment above.</h4>
+
+					<h5>&copy; copyright reserved</h5>
+
+				</footer>
+
+			</div>
+
+		</body>
+
+</html>

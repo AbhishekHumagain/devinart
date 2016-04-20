@@ -1,0 +1,152 @@
+<!--doctype html-->
+<html>
+	<head>
+		<title>
+			Contact Us
+		</title>
+
+		<style type="text/css">
+			*
+			{
+				margin:0px;
+			}
+			html{
+				background-image:url(../images/background.jpg);
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				height:100%;
+				width:100%;
+			}
+			li {
+				float:left;
+				padding:30px;
+				color:#0D0D63;
+				list-style:none;
+				font-size:15px;
+				font-family:helvetica;
+				transition:all 0.5s;
+			}
+			li:hover{
+				transform:scale(1.5,1.5);
+				color:maroon;
+			}
+			h1{
+				color:maroon;
+				clear:both;
+				margin-bottom:4px;
+				font-family:helvetica;
+			}
+			h4{
+			 color:maroon;
+			 font-size:20px;
+			 font-family:helvetica;
+			 margin-left:50px;
+			}
+			h5{
+				color:maroon;
+				font-size:10px;
+				font-family:helvetica;
+				margin: 40px 400px 100px;
+			}
+			a {
+				text-decoration:none;
+				color:black;
+			}
+			nav {
+				background:brown fixed;
+				height:80px;
+				width:100%;
+			}
+		</style>
+
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+			<script>
+			function initialize() {
+				var mapProp = {
+					center:new google.maps.LatLng(27.666044, 85.349866),
+					zoom:5,
+					mapTypeId:google.maps.MapTypeId.ROADMAP
+				};
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+
+	</head>
+
+		<body>
+
+			<div style="margin:0px auto; background:#FADFDF; height:950px; width:1000px;">
+
+				<header style="background-color:#fadfdf;">
+				<h2 style="color:maroon; margin-left:275px;"> Sketch And Painting </h2>
+				<div style="background-image:url(../images/logo.jpg); height:100px; width:100px;margin:20px 40px 8px 40px;">
+				</div>
+
+
+				<div style="clear:both"></div>
+
+				<nav style="background-color:#f5cece; width:1000px; height:65px; margin-top:10px">
+
+					<ul>
+						<li> <a href="../home.html">Home</a></li>
+						<li> <a href="history.html">History</a></li>
+						<li> <a href="types.html">Types</a></li>
+						<li> <a href="sketch.html">Sketch</a></li>
+						<li> <a href="painting.html">Painting</a></li>
+						<li> <a href="contact us.html"> Contact Us</a></li>
+					</ul>
+
+				</nav>
+				</header>
+			<main>
+				<form action="mailto: sity1c116002@islingtoncollege.edu.np" method="get" name="sign_up" enctype="multipart/form data">
+
+						<table>
+						<tr>
+							<td>Name: </td>
+							<td><input type="text" name="name" placeholder="First Name" autocomplete="on"></td> <td><input type="text" name="name" placeholder="Last Name" auto complete="off"></td>
+						</tr>
+						<tr>
+							<td>Email: </td>
+							<td><input type="text" name="email" placeholder="Email Address"></td>
+						</tr>
+
+						<tr>
+							<td>Mobile Number: +977 </td>
+							<td><input type="text" name="Mobile number" placeholder="Mobile Number"></td>
+						</tr>
+						<tr>
+							<td>Comment</td>
+							<td><textarea name="address" rows="8" cols="46"></textarea>
+						</tr>
+
+						<tr>
+							<td>
+							<input type="Submit" name="submit" value="Submit"/>
+							</td>
+						</tr>
+						</table>
+						</form>
+				</main>
+
+					<div id="googleMap" style="width:1000px;height:300px;"></div>
+
+				<footer style="background-color:#fadfdf; height:200px; width:1000px;">
+					<h3 style="color:maroon; font-size:50px; font-family:helvetica; margin-left:250px;">Get In Touch</h3>
+					<h4> Have queries, need suggestion or just </h4>
+					<h4>want to say hello.</h4>
+					<h4>Please drop us comment above.</h4>
+
+					<h5>&copy; copyright reserved</h5>
+
+				</footer>
+
+			</header>
+
+			</div>
+
+		</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!--doctype html-->
+<html>
+	<head>
+		<title>
+			Home
+		</title>
+		<meta charset="utf-8">
+       <title> slider</title>
+
+		<style type="text/css">
+			*
+			{
+				margin:0px;
+			}
+			html{
+				background-image:url(images/background.jpg);
+				background-repeat:repeat;
+				background-attachment:fixed;
+
+			}
+			li {
+				float:left;
+				padding:40px;
+				color:#0D0D63;
+				list-style:none;
+				font-size:15px;
+				font-family:helvetica;
+				transition:all 0.5s;
+			}
+			li:hover{
+				transform:scale(1.5,1.5);
+				color:maroon;
+			}
+			h1{
+				color:maroon;
+				clear:both;
+				margin-bottom:4px;
+				font-family:helvetica;
+			}
+			h4{
+			 color:maroon;
+			 font-size:20px;
+			 font-family:helvetica;
+			 margin-left:50px;"
+			}
+			h5{
+				color:maroon;
+				font-size:10px;
+				font-family:helvetica;
+				margin: 50px 400px 100px;
+			}
+			a {
+				text-decoration:none;
+				color:black;
+			}
+			nav {
+				background:brown fixed;
+				height:80px;
+				width:100%;
+			}
+			#left_holder {
+			    height:  450px;
+			    width: : 100px;
+			    position: absolute;
+					margin: 275px 250px 300px;
+			    left: 0px;
+			    top: 0px;
+			}
+			#right_holder {
+			     height:  450px;
+			    width: : 100px;
+			     position: absolute;
+					 margin: 275px 250px 300px;
+			    right: 0px;
+			    top: 0px;
+			}
+			#left {
+			    height: 50px;
+			    width:50px;
+			    position: absolute;
+					margin: 50px;
+			    top: 40%;
+			    left:0px;
+			}
+			#right {
+			    height: 50px;
+			    width:50px;
+			    position: absolute;
+					margin: 50px;
+			    top: 40%;
+			    right:0px;
+			}
+		</style>
+
+	</head>
+
+		<body onLoad="slideA()">
+
+			<div style="margin:0px auto; background:#fadfdf; height:950px; width:1000px;">
+
+				<header style="background-color:#fadfdf">
+				<h2 style="color:maroon; margin-left:275px;"> Sketch And Painting </h2>
+				<div style="background-image:url(images/logo.jpg); height:100px; width:100px; margin:20px 40px 8px 40px;">
+				</div>
+
+				<nav style="background-color:#f5cece; width:1000px; height:65px; margin-top:10px">
+
+					<ul>
+						<li> <a href="pages/home.html">Home</a></li>
+						<li> <a href="pages/history.html">History</a></li>
+						<li> <a href="pages/types.html">Types</a></li>
+						<li> <a href="pages/sketch.html">Sketch</a></li>
+						<li> <a href="pages/painting.html">Painting</a></li>
+						<li> <a href="pages/contact us.html"> Contact Us</a></li>
+
+					</ul>
+
+				</nav>
+				</header>
+				<!--slider starting-->
+				<div>
+					<img src="images/image0.jpg" name="slide" width="1000px" height="500px">
+					<div id="left_holder" >
+							<img onClick="slide(-1)" id= "left" src="arrow_left.png"/></div>
+					<div id="right_holder"><img onClick="slide(1)" id ="right" src="arrow_right.png"/></div>
+					<script type="text/javascript">
+					var image1= new Image();
+					var image2 = new Image();
+					image1.src= "images/image1.jpg";
+					image2.src= "images/image2.jpg";
+					var step = 1;
+					function slider()
+					{
+						document.images.slide.src = "images/image" + step + ".jpg";
+						if (step <11)
+						{
+							step++;
+						}
+						else
+						{
+							step= 1;
+						}
+						setTimeout("slider()", 1000);
+					}
+					slider();
+					</script>
+				</div>
+				<!--ending of slider-->
+				<!--starting of footer-->
+				<footer style="background-color:#fadfdf; height:200px; width:1000px;">
+					<h3 style="color:maroon; font-size:50px; font-family:helvetica; margin-left:350px;">Get In Touch</h3>
+					<h4> Have queries, need suggestion or just </h4>
+					<h4>want to say hello.</h4>
+					<h4>Please drop us comment above.</h4>
+
+					<h5>&copy; copyright reserved</h5>
+
+				</footer>
+				<!--ending of footer-->
+
+			</div>
+
+		</body>
+
+</html>
